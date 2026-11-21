@@ -26,4 +26,11 @@ public class Jogador {
         y += dy * velocidade;
 
     }
+
+    public void correr(int dx, int dy) {
+
+        x += dx * (velocidade * 2);
+        y += dy * (velocidade * 2);
+
+    }
 }

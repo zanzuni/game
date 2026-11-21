@@ -1,7 +1,7 @@
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 
 public class Jogo extends JPanel implements ActionListener, KeyListener {
 
@@ -18,7 +18,7 @@ addKeyListener(this);
 
         JFrame janela = new JFrame("Survival Island");
 
-        janela.setSize(800, 600);
+        janela.setSize(1920, 1080);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setResizable(false);
 
@@ -41,11 +41,11 @@ addKeyListener(this);
 
         // Desenhar o chão
         g.setColor(new Color(90, 160, 80));
-        g.fillRect(0, 0, 800, 600);
+        g.fillRect(0, 0, 1920, 1080);
 
         // Desenhar a água
         g.setColor(new Color(50, 140, 200));
-        g.fillRect(0, 0, 800, 50);
+        g.fillRect(0, 0, 1920, 50);
 
         // Desenhar o jogador
         jogador.desenhar(g);
@@ -68,8 +68,8 @@ addKeyListener(this);
 if (jogador.x < 0) jogador.x = 0;
 if (jogador.y < 50) jogador.y = 50;
 
-if (jogador.x > 770) jogador.x = 770;
-if (jogador.y > 540) jogador.y = 540;
+if (jogador.x > 1870) jogador.x = 1870;
+if (jogador.y > 1030) jogador.y = 1030;
 
         // Atualizar a tela
         repaint();
